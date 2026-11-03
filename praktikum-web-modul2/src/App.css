@@ -1,0 +1,346 @@
+* {
+  box-sizing: border-box;
+}
+
+.wadah {
+  width: 100%;
+  max-width: 700px;
+  margin: 36px auto;
+  padding: 0 20px 40px;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+.judul {
+  color: #1b365d;
+  margin: 0 0 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.subjudul {
+  color: #718096;
+  margin: 8px 0 22px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.kartu {
+  background: #ffffff;
+  border: 1px solid #dce2ea;
+  border-radius: 9px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+}
+
+.kartu h2 {
+  margin: 0 0 14px;
+  font-size: 17px;
+  color: #1b365d;
+  text-align: center;
+}
+
+.baris {
+  display: flex;
+  gap: 8px;
+}
+
+.input {
+  width: 100%;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 13px;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+.baris .input {
+  flex: 1;
+}
+
+.tombol {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #1b365d;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tombol:hover {
+  opacity: 0.85;
+}
+
+.tombol:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.tombol-merah {
+  background: #dc2626;
+}
+
+.tombol-kecil {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.daftar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.item span {
+  flex: 1;
+}
+
+.selesai {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.kosong {
+  color: #718096;
+  text-align: center;
+  font-style: italic;
+  padding: 14px 0;
+  font-size: 13px;
+}
+
+.galat {
+  color: #dc2626;
+  font-size: 12px;
+  margin: 7px 0 0;
+}
+
+.ringkasan {
+  font-size: 13px;
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+/* FILTER TUGAS */
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.filter button {
+  padding: 8px 12px;
+  border: 1px solid #1b365d;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #1b365d;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.filter button.filter-aktif {
+  background: #1b365d;
+  color: #ffffff;
+}
+
+.hapus-semua {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+/* CATATAN KEUANGAN MINI */
+
+.keuangan {
+  margin-top: 42px;
+}
+
+.keuangan > .judul {
+  font-size: 30px;
+}
+
+.keuangan > .subjudul {
+  margin-bottom: 18px;
+}
+
+/* RINGKASAN SALDO */
+
+.ringkasan-utama {
+  background: #ffffff;
+  padding: 12px;
+  border: 1px solid #dce2ea;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.saldo {
+  background: #f1f5f9;
+  padding: 16px 12px;
+  border-radius: 7px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.saldo p {
+  margin: 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.saldo h2 {
+  color: #1b365d;
+  font-size: 22px;
+  margin: 8px 0 0;
+}
+
+.ringkasan-dua {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.kotak-pemasukan,
+.kotak-pengeluaran {
+  background: #ffffff;
+  border: 1px solid #dce2ea;
+  border-radius: 7px;
+  padding: 13px 5px;
+  text-align: center;
+}
+
+.kotak-pemasukan p,
+.kotak-pengeluaran p {
+  margin: 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.kotak-pemasukan h3,
+.kotak-pengeluaran h3 {
+  font-size: 14px;
+  margin: 7px 0 0;
+  overflow-wrap: anywhere;
+}
+
+.kotak-pemasukan h3 {
+  color: #16a34a;
+}
+
+.kotak-pengeluaran h3 {
+  color: #dc2626;
+}
+
+/* FORM KEUANGAN */
+
+.form-keuangan {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  text-align: left;
+}
+
+.form-keuangan label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #475569;
+  text-align: center;
+}
+
+.form-keuangan .input {
+  padding: 9px 10px;
+  font-size: 12px;
+}
+
+.form-keuangan .tombol {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+/* DAFTAR TRANSAKSI */
+
+.transaksi-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.transaksi-item:last-child {
+  border-bottom: none;
+}
+
+.transaksi-info {
+  min-width: 0;
+}
+
+.transaksi-info strong {
+  display: block;
+  color: #1f2937;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.jenis-transaksi {
+  margin: 5px 0 0;
+  font-size: 12px;
+}
+
+.pemasukan {
+  color: #16a34a;
+}
+
+.pengeluaran {
+  color: #dc2626;
+}
+
+.aksi-transaksi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.aksi-transaksi strong {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+  .wadah {
+    margin-top: 24px;
+    padding: 0 14px 30px;
+  }
+
+  .judul,
+  .keuangan > .judul {
+    font-size: 25px;
+  }
+
+  .baris {
+    flex-wrap: wrap;
+  }
+
+  .baris .tombol {
+    width: 100%;
+  }
+}
